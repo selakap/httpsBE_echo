@@ -102,6 +102,8 @@ public class testBE implements Runnable{
                     read = in.read(buf);
                     outt.append(buf, 0, read);
                     out.print(buf);
+                    //you can print the request paylod usng below line
+                    System.out.println(buf);
                     out.flush();
 
                     if (read < 200){
