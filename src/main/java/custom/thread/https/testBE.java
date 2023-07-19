@@ -69,6 +69,7 @@ public class testBE implements Runnable{
             System.out.println(payload.length());
             String line = null;
             while ((line = in.readLine()) != null) {
+                //out.print(line);
                 System.out.println(line);
                 if (line.isEmpty()) { //read header set
                     break;
@@ -103,7 +104,7 @@ public class testBE implements Runnable{
                     out.print(buf);
                     out.flush();
 
-                    if (read < 10){
+                    if (read < 200){
                         break;
                     }
                     //if (read < 100)
