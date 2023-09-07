@@ -24,7 +24,7 @@ public class testBE implements Runnable{
             //curl https://localhost:7001 -k
             // Create a ServerSocket to listen on that port.
             payload=readFile();
-            System.setProperty("javax.net.ssl.keyStore", "/Users/selakapiumal/My_tickets/CAREMORESUB/CAREMORESUB-186/wso2am-3.2.0/repository/resources/security/wso2carbon.jks");
+            System.setProperty("javax.net.ssl.keyStore", "/Users/selakapiumal/My_tickets/wso2am-3.2.0/repository/resources/security/wso2carbon.jks");
             System.setProperty("javax.net.ssl.keyStorePassword", "wso2carbon");
             ServerSocketFactory ssf = SSLServerSocketFactory.getDefault();
             ServerSocket ss = ssf.createServerSocket(7001);
