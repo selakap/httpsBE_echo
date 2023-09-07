@@ -78,11 +78,11 @@ public class testBE implements Runnable{
 
             int read = in.read(buf);
             out.print("HTTP/1.1 200 OK\r\n");
-            out.print("Content-Type: text/plain\r\n");
+            //out.print("Content-Type: text/plain\r\n");
             //out.print("Content-Length: 2097155\r\n");
-            out.print("Content-Length: 1594797\r\n");
+            //out.print("Content-Length: 1594797\r\n");
 
-            out.print("Date: Sun, 11 Sep 2022 17:39:46 GMT\r\n");
+            //out.print("Date: Sun, 11 Sep 2022 17:39:46 GMT\r\n");
 
             out.print("\r\n"); // End of headers
             out.print("\r\n");
